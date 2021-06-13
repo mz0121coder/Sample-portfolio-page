@@ -1,1 +1,208 @@
+* {
+    box-sizing: border-box;
+    margin: 0.0001;
+    padding: 0.001;
+}
 
+body {
+    background-color: #ffff66;
+}
+
+header {
+    background-color: #000000;
+    color: #ffff00;
+    padding: 20px;
+    font-family: 'Helvetica', 'Helvetica Sans Unicode', 'Helvetica Grande', 'Helvetica Sans', Arial, sans-serif;
+}
+
+header h1 {
+    display: inline-flex;
+    font-size: 48px;
+    background-color: #000000;
+    color: #ffff00;
+    margin-left: -20px;
+    padding: 0 20px 0 20px;
+}
+
+header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Helvetica', 'Helvetica Sans Unicode', 'Helvetica Grande', 'Helvetica Sans', Arial, sans-serif;
+    font-size: 30px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffff00;
+    text-decoration: underline 2px;
+}
+
+article{
+    font-family: 'Helvetica', 'Helvetica Sans Unicode', 'Helvetica Grande', 'Helvetica Sans', Arial, sans-serif;
+    display: flex;
+    color: #000000;
+    margin-left: 1%;
+    margin-top: 1%;
+}
+
+article h1{
+    border-right-style: solid;
+    float: left;
+    font-size: 42px;
+    padding-right: 2%;
+    text-align: right;
+}
+
+article p {
+    font-size: 20px;
+    color: #000000;
+    margin-left: 5%;
+    padding-left: 3.5%;
+}
+
+section{
+    font-family: 'Helvetica', 'Helvetica Sans Unicode', 'Helvetica Grande', 'Helvetica Sans', Arial, sans-serif;
+    display: flex;
+    margin-left: 2.6%;
+    margin-top:1%;
+    color: #000000;
+}
+
+section h1{
+    float: left;
+    border-right-style: solid;
+    padding-right: 1.6%;
+    font-size: 42px;
+}
+
+main{
+    margin-left: -2%;
+    display: flex;
+}
+
+.flex-container{
+    display: flex-inline;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0% 4% 0 4%;
+}
+
+figure, main-figure{
+    color: #000080;
+    border-style: solid;
+}
+
+main-figure{
+    margin: 0 100% 0 100%;
+    position: relative;
+    border-radius: 8px;
+}
+
+figure h2,h4{
+    position:relative;
+}
+
+text-container{
+    position: absolute;
+    bottom: 20px;
+    background-color: #000000;
+    color: #ffff00;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.left-row{
+    position: relative;
+    border-radius: 8px;
+}
+
+.left-row:hover,
+.right-row:hover,
+main-figure:hover{
+    position: relative;
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+}
+
+.right-row{
+    position: relative;
+    border-radius: 8px;
+}
+
+
+figure img{
+    width: 400px;
+    height: 250px;
+    background-size: cover;
+}
+
+.code-card .card-header {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .code-card:hover,
+  .code-card:hover .card-header {
+    box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0 0 15px rgba(232, 102, 236, 1);
+  }
+
+footer {
+    display: flex;
+    margin-top: 2%;
+    align-items: center;
+    font-family: 'Helvetica', 'Helvetica Sans Unicode', 'Helvetica Grande', 'Helvetica Sans', Arial, sans-serif;
+    margin-left: 1%;
+}
+
+footer h1 {
+    font-size: 30px;
+    text-align: right;
+    border-right-style: solid;
+    padding-right: 1.9%;
+    float: none;
+    display: inline-block;
+    margin-bottom: 1%;
+    color: #000033;
+}
+
+footer nav {
+    font-size: 25px;
+    justify-content: center;
+    padding-left: 25%;
+}
+
+footer nav ul {
+    list-style-type: none;
+}
+
+footer nav ul li {
+    display: inline-flex;
+    margin-left: 25px;
+}
+
+footer a{
+    color: #000033;
+
+}
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack navbar, sidebar, and body */
+    article,
+    section,
+    footer 
+    {
+      flex-direction: column;
+    }
+  }
+  
